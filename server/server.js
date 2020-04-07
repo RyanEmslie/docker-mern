@@ -2,6 +2,9 @@ const express = require("express");
 const app = express();
 const PORT = 8080;
 
+// DB confi
+require("./src/database");
+
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
